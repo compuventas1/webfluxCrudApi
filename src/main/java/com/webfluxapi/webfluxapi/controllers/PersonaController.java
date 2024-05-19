@@ -16,7 +16,6 @@ public class PersonaController {
     @Autowired
     private PersonaInterfaceService service;
 
-
     @GetMapping("/listar")
     public Flux<Persona> listar(){
         return service.listar();
